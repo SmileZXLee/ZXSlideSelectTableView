@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7448B36C233B427A0089EEA7 /* DemoHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7448B36B233B42790089EEA7 /* DemoHeaderView.m */; };
+		7448B36E233B42900089EEA7 /* DemoHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7448B36D233B42900089EEA7 /* DemoHeaderView.xib */; };
+		7448B371233B53BC0089EEA7 /* NSObject+ZXSlideSelectTableViewKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7448B370233B53BB0089EEA7 /* NSObject+ZXSlideSelectTableViewKVO.m */; };
+		74DAE58A233B13640045D242 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DAE589233B13640045D242 /* AppDelegate.m */; };
+		74DAE592233B13680045D242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DAE591233B13680045D242 /* Assets.xcassets */; };
+		74DAE595233B13680045D242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74DAE593233B13680045D242 /* LaunchScreen.storyboard */; };
+		74DAE598233B13680045D242 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DAE597233B13680045D242 /* main.m */; };
+		74DAE5A2233B13690045D242 /* ZXSlideSelectTableViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DAE5A1233B13690045D242 /* ZXSlideSelectTableViewDemoUITests.m */; };
+		74DAE5B8233B16570045D242 /* ZXTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DAE5AE233B16570045D242 /* ZXTableView.m */; };
+		74DAE5B9233B16570045D242 /* NSObject+ZXTbAddPro.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DAE5B0233B16570045D242 /* NSObject+ZXTbAddPro.m */; };
+		74DAE5BA233B16570045D242 /* ZXTbGetProName.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DAE5B2233B16570045D242 /* ZXTbGetProName.m */; };
+		74DAE5BB233B16570045D242 /* NSObject+ZXTbSafeValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DAE5B5233B16570045D242 /* NSObject+ZXTbSafeValue.m */; };
+		74DAE5BE233B16840045D242 /* ZXSlideSelectTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DAE5BD233B16840045D242 /* ZXSlideSelectTableView.m */; };
+		74DAE5C3233B17A10045D242 /* DemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DAE5C1233B17A10045D242 /* DemoVC.m */; };
+		74DAE5C4233B17A10045D242 /* DemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74DAE5C2233B17A10045D242 /* DemoVC.xib */; };
+		74DAE5C9233B185F0045D242 /* DemoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DAE5C8233B185F0045D242 /* DemoModel.m */; };
+		74DAE5CD233B18800045D242 /* DemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DAE5CB233B18800045D242 /* DemoCell.m */; };
+		74DAE5CE233B18800045D242 /* DemoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74DAE5CC233B18800045D242 /* DemoCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74DAE59E233B13690045D242 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74DAE57D233B13640045D242 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74DAE584233B13640045D242;
+			remoteInfo = ZXSlideSelectTableViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7448B36A233B42790089EEA7 /* DemoHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoHeaderView.h; sourceTree = "<group>"; };
+		7448B36B233B42790089EEA7 /* DemoHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoHeaderView.m; sourceTree = "<group>"; };
+		7448B36D233B42900089EEA7 /* DemoHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoHeaderView.xib; sourceTree = "<group>"; };
+		7448B36F233B53BB0089EEA7 /* NSObject+ZXSlideSelectTableViewKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXSlideSelectTableViewKVO.h"; sourceTree = "<group>"; };
+		7448B370233B53BB0089EEA7 /* NSObject+ZXSlideSelectTableViewKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXSlideSelectTableViewKVO.m"; sourceTree = "<group>"; };
+		74DAE585233B13640045D242 /* ZXSlideSelectTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZXSlideSelectTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74DAE588233B13640045D242 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		74DAE589233B13640045D242 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		74DAE591233B13680045D242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74DAE594233B13680045D242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		74DAE596233B13680045D242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74DAE597233B13680045D242 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		74DAE59D233B13690045D242 /* ZXSlideSelectTableViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZXSlideSelectTableViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74DAE5A1233B13690045D242 /* ZXSlideSelectTableViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXSlideSelectTableViewDemoUITests.m; sourceTree = "<group>"; };
+		74DAE5A3233B13690045D242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74DAE5AE233B16570045D242 /* ZXTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXTableView.m; sourceTree = "<group>"; };
+		74DAE5B0233B16570045D242 /* NSObject+ZXTbAddPro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXTbAddPro.m"; sourceTree = "<group>"; };
+		74DAE5B1233B16570045D242 /* NSObject+ZXTbSafeValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXTbSafeValue.h"; sourceTree = "<group>"; };
+		74DAE5B2233B16570045D242 /* ZXTbGetProName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXTbGetProName.m; sourceTree = "<group>"; };
+		74DAE5B3233B16570045D242 /* NSObject+ZXTbAddPro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXTbAddPro.h"; sourceTree = "<group>"; };
+		74DAE5B4233B16570045D242 /* ZXTbGetProName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTbGetProName.h; sourceTree = "<group>"; };
+		74DAE5B5233B16570045D242 /* NSObject+ZXTbSafeValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXTbSafeValue.m"; sourceTree = "<group>"; };
+		74DAE5B6233B16570045D242 /* ZXTableViewConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTableViewConfig.h; sourceTree = "<group>"; };
+		74DAE5B7233B16570045D242 /* ZXTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTableView.h; sourceTree = "<group>"; };
+		74DAE5BC233B16840045D242 /* ZXSlideSelectTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXSlideSelectTableView.h; sourceTree = "<group>"; };
+		74DAE5BD233B16840045D242 /* ZXSlideSelectTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXSlideSelectTableView.m; sourceTree = "<group>"; };
+		74DAE5C0233B17A10045D242 /* DemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoVC.h; sourceTree = "<group>"; };
+		74DAE5C1233B17A10045D242 /* DemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoVC.m; sourceTree = "<group>"; };
+		74DAE5C2233B17A10045D242 /* DemoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoVC.xib; sourceTree = "<group>"; };
+		74DAE5C7233B185F0045D242 /* DemoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoModel.h; sourceTree = "<group>"; };
+		74DAE5C8233B185F0045D242 /* DemoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoModel.m; sourceTree = "<group>"; };
+		74DAE5CA233B18800045D242 /* DemoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoCell.h; sourceTree = "<group>"; };
+		74DAE5CB233B18800045D242 /* DemoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoCell.m; sourceTree = "<group>"; };
+		74DAE5CC233B18800045D242 /* DemoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74DAE582233B13640045D242 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74DAE59A233B13690045D242 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74DAE57C233B13640045D242 = {
+			isa = PBXGroup;
+			children = (
+				74DAE587233B13640045D242 /* ZXSlideSelectTableViewDemo */,
+				74DAE5A0233B13690045D242 /* ZXSlideSelectTableViewDemoUITests */,
+				74DAE586233B13640045D242 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		74DAE586233B13640045D242 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74DAE585233B13640045D242 /* ZXSlideSelectTableViewDemo.app */,
+				74DAE59D233B13690045D242 /* ZXSlideSelectTableViewDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74DAE587233B13640045D242 /* ZXSlideSelectTableViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				74DAE5AD233B16570045D242 /* ZXTableView */,
+				74DAE5AC233B15F00045D242 /* ZXSlideSelectTableView */,
+				74DAE5BF233B17870045D242 /* Demo */,
+				74DAE588233B13640045D242 /* AppDelegate.h */,
+				74DAE589233B13640045D242 /* AppDelegate.m */,
+				74DAE591233B13680045D242 /* Assets.xcassets */,
+				74DAE593233B13680045D242 /* LaunchScreen.storyboard */,
+				74DAE596233B13680045D242 /* Info.plist */,
+				74DAE597233B13680045D242 /* main.m */,
+			);
+			path = ZXSlideSelectTableViewDemo;
+			sourceTree = "<group>";
+		};
+		74DAE5A0233B13690045D242 /* ZXSlideSelectTableViewDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				74DAE5A1233B13690045D242 /* ZXSlideSelectTableViewDemoUITests.m */,
+				74DAE5A3233B13690045D242 /* Info.plist */,
+			);
+			path = ZXSlideSelectTableViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		74DAE5AC233B15F00045D242 /* ZXSlideSelectTableView */ = {
+			isa = PBXGroup;
+			children = (
+				74DAE5BC233B16840045D242 /* ZXSlideSelectTableView.h */,
+				74DAE5BD233B16840045D242 /* ZXSlideSelectTableView.m */,
+				7448B36F233B53BB0089EEA7 /* NSObject+ZXSlideSelectTableViewKVO.h */,
+				7448B370233B53BB0089EEA7 /* NSObject+ZXSlideSelectTableViewKVO.m */,
+			);
+			path = ZXSlideSelectTableView;
+			sourceTree = "<group>";
+		};
+		74DAE5AD233B16570045D242 /* ZXTableView */ = {
+			isa = PBXGroup;
+			children = (
+				74DAE5B7233B16570045D242 /* ZXTableView.h */,
+				74DAE5AE233B16570045D242 /* ZXTableView.m */,
+				74DAE5B6233B16570045D242 /* ZXTableViewConfig.h */,
+				74DAE5AF233B16570045D242 /* ZXTbExtension */,
+			);
+			path = ZXTableView;
+			sourceTree = "<group>";
+		};
+		74DAE5AF233B16570045D242 /* ZXTbExtension */ = {
+			isa = PBXGroup;
+			children = (
+				74DAE5B1233B16570045D242 /* NSObject+ZXTbSafeValue.h */,
+				74DAE5B5233B16570045D242 /* NSObject+ZXTbSafeValue.m */,
+				74DAE5B3233B16570045D242 /* NSObject+ZXTbAddPro.h */,
+				74DAE5B0233B16570045D242 /* NSObject+ZXTbAddPro.m */,
+				74DAE5B2233B16570045D242 /* ZXTbGetProName.m */,
+				74DAE5B4233B16570045D242 /* ZXTbGetProName.h */,
+			);
+			path = ZXTbExtension;
+			sourceTree = "<group>";
+		};
+		74DAE5BF233B17870045D242 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				74DAE5C6233B184F0045D242 /* Model */,
+				74DAE5C5233B18490045D242 /* View */,
+				74DAE5C0233B17A10045D242 /* DemoVC.h */,
+				74DAE5C1233B17A10045D242 /* DemoVC.m */,
+				74DAE5C2233B17A10045D242 /* DemoVC.xib */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		74DAE5C5233B18490045D242 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74DAE5CA233B18800045D242 /* DemoCell.h */,
+				74DAE5CB233B18800045D242 /* DemoCell.m */,
+				74DAE5CC233B18800045D242 /* DemoCell.xib */,
+				7448B36A233B42790089EEA7 /* DemoHeaderView.h */,
+				7448B36B233B42790089EEA7 /* DemoHeaderView.m */,
+				7448B36D233B42900089EEA7 /* DemoHeaderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		74DAE5C6233B184F0045D242 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74DAE5C7233B185F0045D242 /* DemoModel.h */,
+				74DAE5C8233B185F0045D242 /* DemoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74DAE584233B13640045D242 /* ZXSlideSelectTableViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74DAE5A6233B13690045D242 /* Build configuration list for PBXNativeTarget "ZXSlideSelectTableViewDemo" */;
+			buildPhases = (
+				74DAE581233B13640045D242 /* Sources */,
+				74DAE582233B13640045D242 /* Frameworks */,
+				74DAE583233B13640045D242 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZXSlideSelectTableViewDemo;
+			productName = ZXSlideSelectTableViewDemo;
+			productReference = 74DAE585233B13640045D242 /* ZXSlideSelectTableViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		74DAE59C233B13690045D242 /* ZXSlideSelectTableViewDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74DAE5A9233B13690045D242 /* Build configuration list for PBXNativeTarget "ZXSlideSelectTableViewDemoUITests" */;
+			buildPhases = (
+				74DAE599233B13690045D242 /* Sources */,
+				74DAE59A233B13690045D242 /* Frameworks */,
+				74DAE59B233B13690045D242 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74DAE59F233B13690045D242 /* PBXTargetDependency */,
+			);
+			name = ZXSlideSelectTableViewDemoUITests;
+			productName = ZXSlideSelectTableViewDemoUITests;
+			productReference = 74DAE59D233B13690045D242 /* ZXSlideSelectTableViewDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74DAE57D233B13640045D242 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "李兆祥";
+				TargetAttributes = {
+					74DAE584233B13640045D242 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					74DAE59C233B13690045D242 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 74DAE584233B13640045D242;
+					};
+				};
+			};
+			buildConfigurationList = 74DAE580233B13640045D242 /* Build configuration list for PBXProject "ZXSlideSelectTableViewDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74DAE57C233B13640045D242;
+			productRefGroup = 74DAE586233B13640045D242 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74DAE584233B13640045D242 /* ZXSlideSelectTableViewDemo */,
+				74DAE59C233B13690045D242 /* ZXSlideSelectTableViewDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74DAE583233B13640045D242 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74DAE5CE233B18800045D242 /* DemoCell.xib in Resources */,
+				74DAE595233B13680045D242 /* LaunchScreen.storyboard in Resources */,
+				74DAE5C4233B17A10045D242 /* DemoVC.xib in Resources */,
+				74DAE592233B13680045D242 /* Assets.xcassets in Resources */,
+				7448B36E233B42900089EEA7 /* DemoHeaderView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74DAE59B233B13690045D242 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74DAE581233B13640045D242 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7448B371233B53BC0089EEA7 /* NSObject+ZXSlideSelectTableViewKVO.m in Sources */,
+				74DAE5B9233B16570045D242 /* NSObject+ZXTbAddPro.m in Sources */,
+				74DAE5BE233B16840045D242 /* ZXSlideSelectTableView.m in Sources */,
+				74DAE5CD233B18800045D242 /* DemoCell.m in Sources */,
+				74DAE5C3233B17A10045D242 /* DemoVC.m in Sources */,
+				74DAE5B8233B16570045D242 /* ZXTableView.m in Sources */,
+				74DAE5BA233B16570045D242 /* ZXTbGetProName.m in Sources */,
+				74DAE5BB233B16570045D242 /* NSObject+ZXTbSafeValue.m in Sources */,
+				7448B36C233B427A0089EEA7 /* DemoHeaderView.m in Sources */,
+				74DAE598233B13680045D242 /* main.m in Sources */,
+				74DAE5C9233B185F0045D242 /* DemoModel.m in Sources */,
+				74DAE58A233B13640045D242 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74DAE599233B13690045D242 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74DAE5A2233B13690045D242 /* ZXSlideSelectTableViewDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74DAE59F233B13690045D242 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74DAE584233B13640045D242 /* ZXSlideSelectTableViewDemo */;
+			targetProxy = 74DAE59E233B13690045D242 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		74DAE593233B13680045D242 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74DAE594233B13680045D242 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		74DAE5A4233B13690045D242 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		74DAE5A5233B13690045D242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74DAE5A7233B13690045D242 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X3UA5897T2;
+				INFOPLIST_FILE = ZXSlideSelectTableViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.zxlee.ZXSlideSelectTableViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		74DAE5A8233B13690045D242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X3UA5897T2;
+				INFOPLIST_FILE = ZXSlideSelectTableViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.zxlee.ZXSlideSelectTableViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		74DAE5AA233B13690045D242 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X3UA5897T2;
+				INFOPLIST_FILE = ZXSlideSelectTableViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.zxlee.ZXSlideSelectTableViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZXSlideSelectTableViewDemo;
+			};
+			name = Debug;
+		};
+		74DAE5AB233B13690045D242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X3UA5897T2;
+				INFOPLIST_FILE = ZXSlideSelectTableViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.zxlee.ZXSlideSelectTableViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZXSlideSelectTableViewDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74DAE580233B13640045D242 /* Build configuration list for PBXProject "ZXSlideSelectTableViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74DAE5A4233B13690045D242 /* Debug */,
+				74DAE5A5233B13690045D242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74DAE5A6233B13690045D242 /* Build configuration list for PBXNativeTarget "ZXSlideSelectTableViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74DAE5A7233B13690045D242 /* Debug */,
+				74DAE5A8233B13690045D242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74DAE5A9233B13690045D242 /* Build configuration list for PBXNativeTarget "ZXSlideSelectTableViewDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74DAE5AA233B13690045D242 /* Debug */,
+				74DAE5AB233B13690045D242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74DAE57D233B13640045D242 /* Project object */;
+}
