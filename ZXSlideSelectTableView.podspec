@@ -9,5 +9,5 @@ s.platform     = :ios, '8.0'
 s.source       = {:git => 'https://github.com/SmileZXLee/ZXSlideSelectTableView.git', :tag => s.version}
 s.source_files = 'ZXSlideSelectTableViewDemo/ZXSlideSelectTableViewDemo/ZXSlideSelectTableView/**/*'
 s.requires_arc = true
-s.dependency 'ZXTableView', '~> 1.0.6'
+s.dependency 'ZXTableView'
 end

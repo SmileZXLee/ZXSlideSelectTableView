@@ -11,7 +11,7 @@
 
 @implementation NSObject (ZXSlideSelectTableViewKVO)
 -(void)zx_obsKey:(NSString *)key handler:(obsResultHandler)handler{
-    [self addObserver:self forKeyPath:key options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew context:CFBridgingRetain([handler copy])];
+    [self addObserver:self forKeyPath:key options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew context:(__bridge_retained void *)([handler copy])];
 }
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
     if(object == self){

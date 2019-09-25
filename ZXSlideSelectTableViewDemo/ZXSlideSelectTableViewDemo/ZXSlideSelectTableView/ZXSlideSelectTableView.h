@@ -8,7 +8,6 @@
 //  基于ZXTableView https://github.com/SmileZXLee/ZXTableView
 
 #import "ZXTableView.h"
-#import "ZXTableView.h"
 NS_ASSUME_NONNULL_BEGIN
 typedef void(^kEnumEventHandler) (id model,BOOL *stop);
 @interface ZXSlideSelectTableView : ZXTableView

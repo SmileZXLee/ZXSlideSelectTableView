@@ -15,16 +15,13 @@
 		74DAE595233B13680045D242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74DAE593233B13680045D242 /* LaunchScreen.storyboard */; };
 		74DAE598233B13680045D242 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DAE597233B13680045D242 /* main.m */; };
 		74DAE5A2233B13690045D242 /* ZXSlideSelectTableViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DAE5A1233B13690045D242 /* ZXSlideSelectTableViewDemoUITests.m */; };
-		74DAE5B8233B16570045D242 /* ZXTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DAE5AE233B16570045D242 /* ZXTableView.m */; };
-		74DAE5B9233B16570045D242 /* NSObject+ZXTbAddPro.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DAE5B0233B16570045D242 /* NSObject+ZXTbAddPro.m */; };
-		74DAE5BA233B16570045D242 /* ZXTbGetProName.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DAE5B2233B16570045D242 /* ZXTbGetProName.m */; };
-		74DAE5BB233B16570045D242 /* NSObject+ZXTbSafeValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DAE5B5233B16570045D242 /* NSObject+ZXTbSafeValue.m */; };
 		74DAE5BE233B16840045D242 /* ZXSlideSelectTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DAE5BD233B16840045D242 /* ZXSlideSelectTableView.m */; };
 		74DAE5C3233B17A10045D242 /* DemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DAE5C1233B17A10045D242 /* DemoVC.m */; };
 		74DAE5C4233B17A10045D242 /* DemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74DAE5C2233B17A10045D242 /* DemoVC.xib */; };
 		74DAE5C9233B185F0045D242 /* DemoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DAE5C8233B185F0045D242 /* DemoModel.m */; };
 		74DAE5CD233B18800045D242 /* DemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DAE5CB233B18800045D242 /* DemoCell.m */; };
 		74DAE5CE233B18800045D242 /* DemoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74DAE5CC233B18800045D242 /* DemoCell.xib */; };
+		FDEB3D86C02A0188A8A3E598 /* libPods-ZXSlideSelectTableViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 540152B64D8F9DF9536E131F /* libPods-ZXSlideSelectTableViewDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E42F5D6BE1F7C8A5F3F2831 /* Pods-ZXSlideSelectTableViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXSlideSelectTableViewDemo.debug.xcconfig"; path = "Target Support Files/Pods-ZXSlideSelectTableViewDemo/Pods-ZXSlideSelectTableViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		540152B64D8F9DF9536E131F /* libPods-ZXSlideSelectTableViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZXSlideSelectTableViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7448B36A233B42790089EEA7 /* DemoHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoHeaderView.h; sourceTree = "<group>"; };
 		7448B36B233B42790089EEA7 /* DemoHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoHeaderView.m; sourceTree = "<group>"; };
 		7448B36D233B42900089EEA7 /* DemoHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoHeaderView.xib; sourceTree = "<group>"; };
@@ -53,15 +52,6 @@
 		74DAE59D233B13690045D242 /* ZXSlideSelectTableViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZXSlideSelectTableViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DAE5A1233B13690045D242 /* ZXSlideSelectTableViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXSlideSelectTableViewDemoUITests.m; sourceTree = "<group>"; };
 		74DAE5A3233B13690045D242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74DAE5AE233B16570045D242 /* ZXTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXTableView.m; sourceTree = "<group>"; };
-		74DAE5B0233B16570045D242 /* NSObject+ZXTbAddPro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXTbAddPro.m"; sourceTree = "<group>"; };
-		74DAE5B1233B16570045D242 /* NSObject+ZXTbSafeValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXTbSafeValue.h"; sourceTree = "<group>"; };
-		74DAE5B2233B16570045D242 /* ZXTbGetProName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXTbGetProName.m; sourceTree = "<group>"; };
-		74DAE5B3233B16570045D242 /* NSObject+ZXTbAddPro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXTbAddPro.h"; sourceTree = "<group>"; };
-		74DAE5B4233B16570045D242 /* ZXTbGetProName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTbGetProName.h; sourceTree = "<group>"; };
-		74DAE5B5233B16570045D242 /* NSObject+ZXTbSafeValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXTbSafeValue.m"; sourceTree = "<group>"; };
-		74DAE5B6233B16570045D242 /* ZXTableViewConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTableViewConfig.h; sourceTree = "<group>"; };
-		74DAE5B7233B16570045D242 /* ZXTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTableView.h; sourceTree = "<group>"; };
 		74DAE5BC233B16840045D242 /* ZXSlideSelectTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXSlideSelectTableView.h; sourceTree = "<group>"; };
 		74DAE5BD233B16840045D242 /* ZXSlideSelectTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXSlideSelectTableView.m; sourceTree = "<group>"; };
 		74DAE5C0233B17A10045D242 /* DemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoVC.h; sourceTree = "<group>"; };
@@ -72,6 +62,7 @@
 		74DAE5CA233B18800045D242 /* DemoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoCell.h; sourceTree = "<group>"; };
 		74DAE5CB233B18800045D242 /* DemoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoCell.m; sourceTree = "<group>"; };
 		74DAE5CC233B18800045D242 /* DemoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoCell.xib; sourceTree = "<group>"; };
+		E2094BA631D63B51ABD26C2B /* Pods-ZXSlideSelectTableViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXSlideSelectTableViewDemo.release.xcconfig"; path = "Target Support Files/Pods-ZXSlideSelectTableViewDemo/Pods-ZXSlideSelectTableViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDEB3D86C02A0188A8A3E598 /* libPods-ZXSlideSelectTableViewDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,12 +84,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24A60C795BB07EE49F799A02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E42F5D6BE1F7C8A5F3F2831 /* Pods-ZXSlideSelectTableViewDemo.debug.xcconfig */,
+				E2094BA631D63B51ABD26C2B /* Pods-ZXSlideSelectTableViewDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		74DAE57C233B13640045D242 = {
 			isa = PBXGroup;
 			children = (
 				74DAE587233B13640045D242 /* ZXSlideSelectTableViewDemo */,
 				74DAE5A0233B13690045D242 /* ZXSlideSelectTableViewDemoUITests */,
 				74DAE586233B13640045D242 /* Products */,
+				24A60C795BB07EE49F799A02 /* Pods */,
+				C038336A9E22BE16EC4CA97E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,7 +116,6 @@
 		74DAE587233B13640045D242 /* ZXSlideSelectTableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				74DAE5AD233B16570045D242 /* ZXTableView */,
 				74DAE5AC233B15F00045D242 /* ZXSlideSelectTableView */,
 				74DAE5BF233B17870045D242 /* Demo */,
 				74DAE588233B13640045D242 /* AppDelegate.h */,
@@ -144,30 +146,6 @@
 				7448B370233B53BB0089EEA7 /* NSObject+ZXSlideSelectTableViewKVO.m */,
 			);
 			path = ZXSlideSelectTableView;
-			sourceTree = "<group>";
-		};
-		74DAE5AD233B16570045D242 /* ZXTableView */ = {
-			isa = PBXGroup;
-			children = (
-				74DAE5B7233B16570045D242 /* ZXTableView.h */,
-				74DAE5AE233B16570045D242 /* ZXTableView.m */,
-				74DAE5B6233B16570045D242 /* ZXTableViewConfig.h */,
-				74DAE5AF233B16570045D242 /* ZXTbExtension */,
-			);
-			path = ZXTableView;
-			sourceTree = "<group>";
-		};
-		74DAE5AF233B16570045D242 /* ZXTbExtension */ = {
-			isa = PBXGroup;
-			children = (
-				74DAE5B1233B16570045D242 /* NSObject+ZXTbSafeValue.h */,
-				74DAE5B5233B16570045D242 /* NSObject+ZXTbSafeValue.m */,
-				74DAE5B3233B16570045D242 /* NSObject+ZXTbAddPro.h */,
-				74DAE5B0233B16570045D242 /* NSObject+ZXTbAddPro.m */,
-				74DAE5B2233B16570045D242 /* ZXTbGetProName.m */,
-				74DAE5B4233B16570045D242 /* ZXTbGetProName.h */,
-			);
-			path = ZXTbExtension;
 			sourceTree = "<group>";
 		};
 		74DAE5BF233B17870045D242 /* Demo */ = {
@@ -204,6 +182,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		C038336A9E22BE16EC4CA97E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				540152B64D8F9DF9536E131F /* libPods-ZXSlideSelectTableViewDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -211,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74DAE5A6233B13690045D242 /* Build configuration list for PBXNativeTarget "ZXSlideSelectTableViewDemo" */;
 			buildPhases = (
+				9541C4EB8D839121DFA2ECC4 /* [CP] Check Pods Manifest.lock */,
 				74DAE581233B13640045D242 /* Sources */,
 				74DAE582233B13640045D242 /* Frameworks */,
 				74DAE583233B13640045D242 /* Resources */,
@@ -301,19 +288,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9541C4EB8D839121DFA2ECC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZXSlideSelectTableViewDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		74DAE581233B13640045D242 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7448B371233B53BC0089EEA7 /* NSObject+ZXSlideSelectTableViewKVO.m in Sources */,
-				74DAE5B9233B16570045D242 /* NSObject+ZXTbAddPro.m in Sources */,
 				74DAE5BE233B16840045D242 /* ZXSlideSelectTableView.m in Sources */,
 				74DAE5CD233B18800045D242 /* DemoCell.m in Sources */,
 				74DAE5C3233B17A10045D242 /* DemoVC.m in Sources */,
-				74DAE5B8233B16570045D242 /* ZXTableView.m in Sources */,
-				74DAE5BA233B16570045D242 /* ZXTbGetProName.m in Sources */,
-				74DAE5BB233B16570045D242 /* NSObject+ZXTbSafeValue.m in Sources */,
 				7448B36C233B427A0089EEA7 /* DemoHeaderView.m in Sources */,
 				74DAE598233B13680045D242 /* main.m in Sources */,
 				74DAE5C9233B185F0045D242 /* DemoModel.m in Sources */,
@@ -465,8 +473,10 @@
 		};
 		74DAE5A7233B13690045D242 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E42F5D6BE1F7C8A5F3F2831 /* Pods-ZXSlideSelectTableViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X3UA5897T2;
 				INFOPLIST_FILE = ZXSlideSelectTableViewDemo/Info.plist;
@@ -483,8 +493,10 @@
 		};
 		74DAE5A8233B13690045D242 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2094BA631D63B51ABD26C2B /* Pods-ZXSlideSelectTableViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X3UA5897T2;
 				INFOPLIST_FILE = ZXSlideSelectTableViewDemo/Info.plist;
