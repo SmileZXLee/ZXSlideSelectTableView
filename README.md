@@ -113,7 +113,7 @@ NSMutableArray *unSelectedArray = self.tableView.zx_unSelectedArray;
 ```
 
 ### ZXTableView相关
-#### 和TableView相关的设置，详见：https://github.com/SmileZXLee/ZXTableView/edit/master/README.md
+#### 和TableView相关的设置，详见：https://github.com/SmileZXLee/ZXTableView/blob/master/README.md
 
 ***
 
