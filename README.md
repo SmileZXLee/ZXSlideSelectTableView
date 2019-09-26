@@ -94,10 +94,6 @@ NSMutableArray *selectedArray = self.tableView.zx_selectedArray;
 ```objective-c
 NSMutableArray *unSelectedArray = self.tableView.zx_unSelectedArray;
 ```
-#### 未选中的模型数组（涉及大量数据遍历，建议放在异步线程获取）
-```objective-c
-NSMutableArray *unSelectedArray = self.tableView.zx_unSelectedArray;
-```
 #### 选中所有项
 ```objective-c
 [self.tableView zx_selectAll];
