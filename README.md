@@ -33,7 +33,8 @@ pod 'ZXSlideSelectTableView'
 @property(assign, nonatomic) BOOL selected;
 @end
 ```
-* 如果您的model中用于记录当前cell是否选中的属性不为"selected"，请修改model中的属性名或设置ZXSlideSelectTableView的zx_modelSelectedKey值为您当前model中用于记录当前cell是否选中的属性名
+* 如果您的model中用于记录当前cell是否选中的属性不为"selected"，请修改model中的属性名或设置ZXSlideSelectTableView的zx_modelSelectedKey值为您当前model中用于记录当前cell是否选中的属性名  
+
 4.在控制器中声明tableView中的cell
 ```objective-c
 self.tableView.zx_setCellClassAtIndexPath = ^Class _Nonnull(NSIndexPath * _Nonnull indexPath) {
