@@ -11,6 +11,7 @@
 @interface DemoCell()
 @property (weak, nonatomic) IBOutlet UIButton *selectBtn;
 @property (weak, nonatomic) IBOutlet UILabel *msgLabel;
+//只需要定义含有“model”字符串的属性，ZXTableView就会自动赋值，重写其set方法即可
 @property (strong, nonatomic) DemoModel *demoModel;
 @end
 @implementation DemoCell

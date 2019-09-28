@@ -12,7 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 typedef void(^kEnumEventHandler) (id model,BOOL *stop);
 @interface ZXSlideSelectTableView : ZXTableView
 ///cell选中状态发生改变回调，若调用了全选和取消全选触发，则selectedIndexPath和selectedModel均为nil
-@property (copy, nonatomic) void (^zx_selectedBlock)(NSIndexPath *selectedIndexPath, id selectedModel);
+@property (copy, nonatomic) void (^zx_selectedBlock)(NSIndexPath * _Nullable selectedIndexPath, id _Nullable selectedModel);
+///滑动手势所在的view，若要设置其frame建议使用zx_gestureViewWidth或zx_gestureViewFrame
+@property(weak, nonatomic, readonly)UIView *zx_gestureView;
 ///数据模型中用于存储选中状态的属性名，默认为"selected"
 @property (copy, nonatomic)NSString *zx_modelSelectedKey;
 ///设置手势识别区域的宽度，默认x，y都为0，高度等同于tableView高度，若gestureViewWidth和gestureViewFrame都不设置，默认为(0,0,50,tableView.contentSize.height)

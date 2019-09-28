@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DemoModel : NSObject
 @property(copy, nonatomic) NSString *msg;
+//用来记录当前cell的选中状态，若此属性不为“selected”，请修改ZXSlideSelectTableView中的zx_modelSelectedKey为当前属性属性名
 @property(assign, nonatomic) BOOL selected;
 @end
 

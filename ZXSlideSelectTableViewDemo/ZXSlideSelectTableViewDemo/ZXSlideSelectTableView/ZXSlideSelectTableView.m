@@ -11,9 +11,7 @@
 #import "NSObject+ZXTbSafeValue.h"
 #import "NSObject+ZXSlideSelectTableViewKVO.h"
 @interface ZXSlideSelectTableView()<UIGestureRecognizerDelegate>
-@property(weak,nonatomic)UIView *zx_gestureView;
 @property(strong,nonatomic)NSIndexPath *lastSelectedIndexPath;
-
 @end
 @implementation ZXSlideSelectTableView
 
@@ -21,7 +19,7 @@
 - (void)setZXSlideSelectTableView{
     UIView *gestureView = [[UIView alloc]init];
     [self addSubview:gestureView];
-    self.zx_gestureView = gestureView;
+    _zx_gestureView = gestureView;
     UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGesture:)];
     UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
     [self.zx_gestureView addGestureRecognizer:panRecognizer];
@@ -82,7 +80,10 @@
 - (void)handelGestureWithPoint:(CGPoint)point{
     NSIndexPath *selectedIndexPath = [self indexPathForRowAtPoint:point];
     if((!self.lastSelectedIndexPath || ![selectedIndexPath isEqual:self.lastSelectedIndexPath]) && selectedIndexPath){
-        id selectedModel = [self performSelector:@selector(getModelAtIndexPath:) withObject:selectedIndexPath];
+        SEL sel = NSSelectorFromString(@"getModelAtIndexPath:");
+        IMP imp = [self methodForSelector:sel];
+        id (*func)(id, SEL, NSIndexPath *) = (void *)imp;
+        id selectedModel = func(self, sel, selectedIndexPath);
         id selectedValue = [selectedModel zx_safeValueForKey:self.zx_modelSelectedKey];
         if(!selectedValue)return;
         if(self.zx_disableAutoSelected){
@@ -94,7 +95,7 @@
         if(self.zx_selectedBlock){
             self.zx_selectedBlock(selectedIndexPath, selectedValue);
         }
-        [self reloadData];
+        [self reloadRowsAtIndexPaths:@[selectedIndexPath] withRowAnimation:UITableViewRowAnimationNone];
     }
     self.lastSelectedIndexPath = selectedIndexPath;
 }
@@ -135,7 +136,10 @@
 #pragma mark 遍历获取所有model
 - (void)zx_enumModelsCallBack:(kEnumEventHandler)result{
     BOOL stop = NO;
-    if([self performSelector:@selector(isMultiDatas)]){
+    SEL sel = NSSelectorFromString(@"isMultiDatas");
+    IMP imp = [self methodForSelector:sel];
+    BOOL (*func)(id, SEL) = (void *)imp;
+    if(func(self, sel)){
         for(NSArray *sectionArr in self.zxDatas){
             for (id model in sectionArr) {
                 result(model,&stop);
