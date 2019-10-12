@@ -31,7 +31,7 @@
             return;
         }
         if(weakSelf.zx_gestureViewWidth != 0){
-            weakSelf.zx_gestureView.frame = CGRectMake(0, 0, self.zx_gestureViewWidth, weakSelf.contentSize.height);
+            weakSelf.zx_gestureView.frame = CGRectMake(0, 0, weakSelf.zx_gestureViewWidth, weakSelf.contentSize.height);
             return;
         }
         weakSelf.zx_gestureView.frame = CGRectMake(0, 0, 50, weakSelf.contentSize.height);
@@ -189,5 +189,8 @@
         _zx_modelSelectedKey = @"selected";
     }
     return _zx_modelSelectedKey;
+}
+- (void)dealloc{
+    NSLog(@"嘻嘻嘻");
 }
 @end

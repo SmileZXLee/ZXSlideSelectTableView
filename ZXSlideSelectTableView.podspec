@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = 'ZXSlideSelectTableView'
-s.version      = '1.0.1'
+s.version      = '1.0.2'
 s.summary      = '快速、轻松地实现滑动选择tableView，支持各种自定义显示效果'
 s.homepage     = 'https://github.com/SmileZXLee/ZXSlideSelectTableView'
 s.license      = 'MIT'
