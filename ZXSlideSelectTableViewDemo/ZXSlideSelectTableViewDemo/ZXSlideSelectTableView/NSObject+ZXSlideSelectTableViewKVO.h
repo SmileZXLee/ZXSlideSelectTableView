@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 typedef void(^obsResultHandler) (id newData, id oldData,id owner);
 @interface NSObject (ZXSlideSelectTableViewKVO)
--(void)zx_obsKey:(NSString *)key handler:(obsResultHandler)handler;
+-(void)zx_slideSelectObsKey:(NSString *)key handler:(obsResultHandler)handler;
 @end
 
 NS_ASSUME_NONNULL_END

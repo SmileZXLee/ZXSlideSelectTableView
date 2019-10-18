@@ -10,6 +10,7 @@
 #import "ZXSlideSelectTableView.h"
 #import "NSObject+ZXTbSafeValue.h"
 #import "NSObject+ZXSlideSelectTableViewKVO.h"
+#define ZXSelectedKey @"selected"
 @interface ZXSlideSelectTableView()<UIGestureRecognizerDelegate>
 @property(strong,nonatomic)NSIndexPath *lastSelectedIndexPath;
 @end
@@ -25,7 +26,7 @@
     [self.zx_gestureView addGestureRecognizer:panRecognizer];
     [self.zx_gestureView addGestureRecognizer:tapRecognizer];
     __weak typeof(self) weakSelf = self;
-    [self zx_obsKey:@"contentSize" handler:^(id  _Nonnull newData, id  _Nonnull oldData, id  _Nonnull owner) {
+    [self zx_slideSelectObsKey:@"contentSize" handler:^(id  _Nonnull newData, id  _Nonnull oldData, id  _Nonnull owner) {
         if(!CGRectEqualToRect(weakSelf.zx_gestureViewFrame, CGRectZero)){
             weakSelf.zx_gestureView.frame = CGRectMake(weakSelf.zx_gestureViewFrame.origin.x, weakSelf.zx_gestureViewFrame.origin.y, weakSelf.zx_gestureViewFrame.size.width, weakSelf.contentSize.height);
             return;
@@ -186,11 +187,13 @@
 
 - (NSString *)zx_modelSelectedKey{
     if(!_zx_modelSelectedKey){
-        _zx_modelSelectedKey = @"selected";
+        _zx_modelSelectedKey = ZXSelectedKey;
     }
     return _zx_modelSelectedKey;
 }
+
+#pragma mark - Dealloc
 - (void)dealloc{
-    NSLog(@"嘻嘻嘻");
+    [self removeObserver:self forKeyPath:@"contentSize"];
 }
 @end
