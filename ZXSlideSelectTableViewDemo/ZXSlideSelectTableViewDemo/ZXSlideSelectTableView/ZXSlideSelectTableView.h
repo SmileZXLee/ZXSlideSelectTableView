@@ -17,7 +17,7 @@ typedef void(^kEnumEventHandler) (id model,BOOL *stop);
 @property(weak, nonatomic, readonly)UIView *zx_gestureView;
 ///数据模型中用于存储选中状态的属性名，默认为"selected"
 @property (copy, nonatomic)NSString *zx_modelSelectedKey;
-///设置手势识别区域的宽度，默认x，y都为0，高度等同于tableView高度，若gestureViewWidth和gestureViewFrame都不设置，默认为(0,0,50,tableView.contentSize.height)
+///zx_gestureView的frame默认x，y都为0，高度等同于tableView的contentSize的高度，默认为(0,0,50,tableView.contentSize.height)
 ///设置手势识别区域的固定宽度
 @property (assign, nonatomic)CGFloat zx_gestureViewWidth;
 ///设置手势识别区域与左侧的固定距离
