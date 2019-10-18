@@ -18,6 +18,11 @@
 
 #pragma mark - 初始化
 - (void)setZXSlideSelectTableView{
+    self.zx_gestureViewWidth = -1;
+    self.zx_gestureViewLeft = -1;
+    self.zx_gestureViewRight = -1;
+    self.zx_gestureViewTop = -1;
+    self.zx_gestureViewBottom = -1;
     UIView *gestureView = [[UIView alloc]init];
     [self addSubview:gestureView];
     _zx_gestureView = gestureView;
@@ -27,15 +32,33 @@
     [self.zx_gestureView addGestureRecognizer:tapRecognizer];
     __weak typeof(self) weakSelf = self;
     [self zx_slideSelectObsKey:@"contentSize" handler:^(id  _Nonnull newData, id  _Nonnull oldData, id  _Nonnull owner) {
-        if(!CGRectEqualToRect(weakSelf.zx_gestureViewFrame, CGRectZero)){
-            weakSelf.zx_gestureView.frame = CGRectMake(weakSelf.zx_gestureViewFrame.origin.x, weakSelf.zx_gestureViewFrame.origin.y, weakSelf.zx_gestureViewFrame.size.width, weakSelf.contentSize.height);
+        CGFloat x = 0;
+        CGFloat y = 0;
+        CGFloat width = 50;
+        CGFloat height = weakSelf.contentSize.height;
+        if(weakSelf.zx_gestureViewFrameBlock){
+            CGRect gestureViewFrame = weakSelf.zx_gestureViewFrameBlock(weakSelf.frame);
+            weakSelf.zx_gestureView.frame = CGRectMake(gestureViewFrame.origin.x,gestureViewFrame.origin.y, gestureViewFrame.size.width, weakSelf.contentSize.height - gestureViewFrame.origin.y);
             return;
         }
-        if(weakSelf.zx_gestureViewWidth != 0){
-            weakSelf.zx_gestureView.frame = CGRectMake(0, 0, weakSelf.zx_gestureViewWidth, weakSelf.contentSize.height);
-            return;
+        if(weakSelf.zx_gestureViewWidth >= 0){
+            width = weakSelf.zx_gestureViewWidth;
         }
-        weakSelf.zx_gestureView.frame = CGRectMake(0, 0, 50, weakSelf.contentSize.height);
+        if(weakSelf.zx_gestureViewLeft >= 0){
+            x = weakSelf.zx_gestureViewLeft;
+        }
+        if(weakSelf.zx_gestureViewRight >= 0){
+            x = weakSelf.frame.size.width - width - weakSelf.zx_gestureViewRight;
+        }
+        if(weakSelf.zx_gestureViewTop >= 0){
+            y = weakSelf.zx_gestureViewTop;
+            height = weakSelf.contentSize.height - y;
+        }
+        if(weakSelf.zx_gestureViewBottom >= 0){
+            y = 0;
+            height = weakSelf.contentSize.height - weakSelf.zx_gestureViewBottom;
+        }
+        weakSelf.zx_gestureView.frame = CGRectMake(x, y, width, height);
     }];
 }
 #pragma mark - 生命周期
