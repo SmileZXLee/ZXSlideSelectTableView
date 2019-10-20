@@ -28,7 +28,9 @@
 #pragma mark - Private
 #pragma mark 设置tableView
 - (void)setTableView{
+    //首先需要设置self.tableView.zx_gestureView的frame，即滑动选择手势识别区域的frame，默认为(0,0,50,self.tableView.contentSize.height)，根据项目的真实情况确定是否需要修改，建议通过self.tableView.zx_gestureViewWidth、self.tableView.zx_gestureViewLeft、self.tableView.zx_gestureViewRight、self.tableView.zx_gestureViewTop、self.tableView.zx_gestureViewBottom以及self.tableView.zx_gestureViewFrameBlock修改，不要直接设置frame，因为以上属性会根据tableView的contentSize改变自动调整
     __weak typeof(self) weakSelf = self;
+    self.tableView.zx_gestureViewLeft = 0;
     //声明tableView的cell
     self.tableView.zx_setCellClassAtIndexPath = ^Class _Nonnull(NSIndexPath * _Nonnull indexPath) {
         return [DemoCell class];
@@ -40,6 +42,12 @@
     //tableView中cell选中事件回调
     self.tableView.zx_selectedBlock = ^(NSIndexPath * _Nonnull selectedIndexPath, id  _Nonnull selectedModel) {
         weakSelf.title = [NSString stringWithFormat:@"已选中%ld个",weakSelf.tableView.zx_selectedArray.count];
+    };
+    //若点击了cell同样需要选中/取消选中效果，则需要实现以下代码
+    //点击了tableView的cell
+    self.tableView.zx_didSelectedAtIndexPath = ^(NSIndexPath * _Nonnull indexPath, DemoModel * _Nonnull model, id  _Nonnull cell) {
+        model.selected = !model.selected;
+        [weakSelf.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
     };
 }
 
