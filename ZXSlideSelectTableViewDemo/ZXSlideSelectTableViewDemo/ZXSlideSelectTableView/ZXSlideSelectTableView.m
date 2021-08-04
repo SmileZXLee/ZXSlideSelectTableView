@@ -117,7 +117,7 @@
         }
         
         if(self.zx_selectedBlock){
-            self.zx_selectedBlock(selectedIndexPath, selectedValue);
+            self.zx_selectedBlock(selectedIndexPath, selectedModel);
         }
         [self reloadRowsAtIndexPaths:@[selectedIndexPath] withRowAnimation:UITableViewRowAnimationNone];
     }
@@ -199,10 +199,10 @@
     [self zx_enumModelsCallBack:^(id  _Nonnull model, BOOL * _Nonnull stop) {
         id selectedValue = [model zx_safeValueForKey:weakSelf.zx_modelSelectedKey];
         if([selectedValue boolValue] && selected){
-            [tempSelectedArr addObject:selectedValue];
+            [tempSelectedArr addObject:model];
         }
         if(![selectedValue boolValue] && !selected){
-            [tempSelectedArr addObject:selectedValue];
+            [tempSelectedArr addObject:model];
         }
     }];
     return tempSelectedArr;

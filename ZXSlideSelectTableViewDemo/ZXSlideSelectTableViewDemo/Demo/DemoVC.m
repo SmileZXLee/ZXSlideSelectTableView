@@ -39,7 +39,7 @@
     self.tableView.zx_setHeaderClassInSection = ^Class _Nonnull(NSInteger section) {
         return [DemoHeaderView class];
     };
-    //tableView中cell选中事件回调
+    //tableView中cell通过滑动手势选中事件回调
     self.tableView.zx_selectedBlock = ^(NSIndexPath * _Nonnull selectedIndexPath, id  _Nonnull selectedModel) {
         weakSelf.title = [NSString stringWithFormat:@"已选中%ld个",weakSelf.tableView.zx_selectedArray.count];
     };
@@ -48,6 +48,7 @@
     self.tableView.zx_didSelectedAtIndexPath = ^(NSIndexPath * _Nonnull indexPath, DemoModel * _Nonnull model, id  _Nonnull cell) {
         model.selected = !model.selected;
         [weakSelf.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+        weakSelf.title = [NSString stringWithFormat:@"已选中%ld个",weakSelf.tableView.zx_selectedArray.count];
     };
 }
 
